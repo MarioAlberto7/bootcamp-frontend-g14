@@ -12,5 +12,9 @@
 * git branch -M main
 * git push -u origin main
 * git remote remove origin
+* git checkout -b <nombre-de-nueva-rama>
+* git push origin mario (Ejecuto luego de hacer un cambio en mi nueva rama)
+* git checkout main (Regreso a la rama principal "main")
+
 
 ***Mario Alberto Huamaní Príncipe***

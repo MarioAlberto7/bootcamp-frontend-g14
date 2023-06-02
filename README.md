@@ -12,5 +12,6 @@
 * git branch -M main
 * git push -u origin main
 * git remote remove origin
+* git checkout -b <nombre-de-la-rama>
 
 ***Mario Alberto Huamaní Príncipe***

@@ -30,13 +30,13 @@
 
         <div class="grid">
             <div>
-            <label>Nombres
-                <input name="text" placeholder="Nombres" required name="nombres" />
+            <label>Names
+                <input name="text" placeholder="Nombres" required name="nombres" required />
             </label>
             </div>
             <div>
             <label>Apellidos
-                <input name="text" placeholder="Apellidos" required name="apellidos" />
+                <input name="text" placeholder="Apellidos" required name="apellidos" required />
                 </label>
             </div>
         </div>    
@@ -47,7 +47,7 @@
 
         <label>
             Fecha de nacimiento
-            <input type="datetime-local" name="fecha" />                
+            <input type="date" name="fecha" required/>                
         </label>
 
         <label>
@@ -65,18 +65,18 @@
 
         <label>
             Dirección
-            <input type="text" placeholder="Dirección" name="dirección" />
+            <input type="text" placeholder="Dirección" name="dirección" required />
         </label>
         <label><input type="text" placeholder="Dirección línea 2" name="dirección2" /></label>
 
         <label>
             Teléfono
-            <input type="tel" placeholder="Número de teléfono" id="telefono" name="telefono" />
+            <input type="tel" placeholder="Número de teléfono" id="telefono" name="telefono" required />
         </label>
 
         <label>
             Código postal
-            <input type="number" name="codpost" placeholder="Ej: 14001" />
+            <input type="number" name="codpost" placeholder="Ej: 14001" required />
         </label>
 
         <label>
@@ -86,7 +86,7 @@
 
         <label>
             Subir firma
-            <input type="file" name="subir" />
+            <input type="file" name="subir" required />
         </label>
 
         <label>

@@ -14,25 +14,55 @@ main {
     width: 560px;
 }
 
+main .form {
+    padding-right: 20px;
+}
+
 .content {
     background-color: hsl(0, 0%, 100%);
-    width: 540px;
-    height: 390px;
-    padding: 28px;
+    width: 760px;
+    height: 520px;
+    padding: 20px 30px 20px 30px;
     border-radius: 14px 14px 14px 14px;
+    font-family: 'roboto', sans-serif;
 }
 
 .photo {
     background-image: url(assets/images/illustration-sign-up-desktop.svg);
     background-repeat: no-repeat;
-    width: 400px;
+    width: 390px;
     background-size: cover;
-    border-radius: 14px 14px 14px 14px;
+    border-radius: 14px 14px 14px 14px;    
 }
 
 .content div {
     display: flex;
     gap: 14px;
+}
+
+.content h1 {
+    color: hsl(234, 29%, 20%);
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content h4 {
+    color: hsl(235, 18%, 26%);
+}
+
+ul li {
+    color: hsl(235, 18%, 26%);
+}
+
+form label {
+    color: hsl(235, 18%, 26%);
+    font-weight: bold;
+}
+
+form h5 {
+    margin-top: 35px;
+    margin-bottom: 1px;
 }
 
 .imag-list {
@@ -44,7 +74,39 @@ main {
     background-image: url(assets/images/icon-list.svg);
     background-repeat: no-repeat;
     background-position: left center;
-    padding-left: 25px;
-    margin-bottom: 10px;
-    
+    padding: 10px 5px 5px 30px;
 }
+
+.infor {
+    margin-top: auto;
+}
+
+main label {
+    display: block;
+    color: hsl(234, 29%, 20%);
+}
+
+.butsub {
+    margin-top: 11px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-style: solid;
+    border-color: hsl(234, 29%, 20%);
+    border-radius: 7px;
+    padding: 15px 79px;
+}
+
+input[type="email"] {
+    display: block;
+    border-color: hsl(231, 7%, 60%);
+    border-width: 2px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    border-style: solid;
+    text-indent: 18px;
+    color: hsl(231, 7%, 60%);
+    border-radius: 7px;
+    padding: 14px 170px 14px 0;
+    text-align-last: justify;    
+}
+

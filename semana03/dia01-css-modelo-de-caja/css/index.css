@@ -248,3 +248,101 @@ img {
     font-weight: var(--font-weight-regular);
 }
 
+.access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 8rem 12rem;
+    
+    position: relative;  
+}
+
+.access_top, .access_bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+.access_top {
+    background-color: var(--primary-dark-blue-main);
+    top: 0;
+}
+
+.access_bottom {
+    background-color: var(--primary-dark-blue-footer);
+    bottom: 0;
+}
+
+.access_form {
+    background-color: var(--primary-dark-blue-main);
+    box-shadow: 1.5px 0.5px 1.5px 2.5px var(--primary-dark-blue-footer);
+    display: block;    
+    z-index: 1;
+    /* margin-left: 28rem; */
+    /* margin-right: 28rem; */
+    padding: 3rem;
+    /* padding-bottom: 3rem; */
+    border-radius: .5rem;
+    
+}
+
+.access_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-family: var(--font-secondary);
+       
+}
+
+.access_text {
+    /* display: flex;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+    padding: 2rem 2rem;   */
+    width: 38rem;
+    font-family: var(--font-secondary);
+    text-align: center;
+    line-height: 2;
+    font-weight: var(--font-weight-regular);
+    
+}
+
+.access_email {
+    
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    width: 20rem;
+    margin-top: 1.5rem;
+    margin-right: .5rem;
+    margin-left: 1%;
+}
+
+.access_button {
+    
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    margin-left: 1rem;
+    width: 12rem;
+    border: none;
+    color: var(--neutral-white);
+    background: 
+        linear-gradient(90deg, var(--accent-cyan-gradient) 0%, 
+        var(--accent-blue-gradient) 35%);
+ 
+}
+
+.footer {
+    display: flex;
+    background-color: var(--primary-dark-blue-footer);
+    justify-content: left;
+    align-items: center;
+    padding: .5rem 4rem 5rem 4rem;
+}
+
+.footer_c5 img {
+    image-resolution: .5px;
+    border: 2px solid;
+    border-radius: 50%;
+}

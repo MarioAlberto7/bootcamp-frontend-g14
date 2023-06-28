@@ -1,48 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />    
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Fylo landing page with two column layout</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <header class="header wrapper">
-        <img src="./images/logo.svg" alt="">
-
-        <nav>
-            <ul class="header__nav">
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Sign In</a></li>
-            </ul>
+  </head>
+  <body>    
+    <header class="section">
+      <div class="section-center header-center">
+        <img
+          src="./images/logo.svg"
+          alt="logo"
+          class="header-logo"
+        />
+        <nav class="navbar">
+          <ul class="header-links">
+            <li class="header-link"><a href="">Features</a></li>
+            <li class="header-link"><a href="">Team</a></li>
+            <li class="header-link"><a href="">Sign In</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
-
-    <main>
-        <section class="hero">
-            <h1 class="hero__title">All your files in one secure location, accessible anywhere.</h1>
-            <p class="hero__text">Fylo stores your most important files in one secure location. 
-                Access them wherever you need, share and collaborate with friends, 
-                family, and co-workers.</p>
-            <input class="hero__input" type="email" placeholder="Enter your email...">
-            <button class="hero__button">Get Started</button>
-            <img class="hero__image" src="./images/illustration-1.svg" alt="">
-        </section>
-
-        <section class="features">
-            <article class="feature__arti">
-                <h1 class="feature__title">
-                    Stay productive, wherever you are
-                </h1>
-                <p>
-                    Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
-                </p>
-
-            </article>
-            
-        </section>
-
-    </main>
-</body>
+    
+    <section class="section hero-section">
+      <div class="section-center hero-center">
+        <img src="./images/illustration-1.svg" class="hero-img img" />
+        <article class="hero-banner">
+          <h1 class="hero-banner-title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="hero-banner-text">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>          
+          <form action="#" class="hero-banner-form">
+            <input type="text" placeholder="Enter your email..." />
+            <button type="submit">Get Started</button>
+          </form>
+        </article>
+      </div>
+    </section>    
+    <section class="section productive-section">
+      <div class="section-center productive-center">
+        <img src="./images/illustration-2.svg" class="img" />
+        <article class="productive-info">
+          <h2 class="prod-title">Stay productive, wherever you are</h2>
+          <p class="prod-text">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <p class="prod-text">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+          <a href="#" class="prod-how-it-works" >See how Fylo works
+            <img src="./images/icon-arrow.svg" /></a>
+          
+          <article class="prod-testimonial">
+            <img src="./images/icon-quotes.svg" />
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="user-info">
+              <img src="./images/avatar-testimonial.jpg" class="avatar-pic" />
+              <span class="name">Kyle Burton</span>
+              <span class="position">Founder & CEO, Huddle</span>
+            </div>
+          </article>
+        </article>
+      </div>
+    </section> 
+    <section class="section cta-section">
+      <div class="section-center cta-center">
+        <article class="cta-card">
+          <h2 class="cta-title">Get early access today</h2>
+          <p class="cta-text">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </article>
+        <form action="#" class="cta-form" >
+          <input type="text" />
+          <button type="submit">Get Started For Free</button>
+        </form>
+      </div>
+    </section>
+    <footer class="section footer">
+      <div class="section-center footer-center">
+        <div class="footer-logo"></div>
+        <div class="footer-content"> 
+          <div class="contact">
+            <div class="phone">
+              <img src="./images/icon-phone.svg" alt="phone icon" />
+              <span>Phone: +1-543-123-4567</span>
+            </div>
+            <div class="email">
+              <img src="./images/icon-email.svg" alt="email icon" />
+              <span>example@fylo.com</span>
+            </div>
+          </div> 
+          <ul class="footer-links">
+            <li><a href="#">about us</a></li>
+            <li><a href="#">jobs</a></li>
+            <li><a href="#">press</a></li>
+            <li><a href="#">blog</a></li>
+          </ul> 
+          <ul class="footer-links">
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">terms</a></li>
+            <li><a href="#">privacy</a></li>
+          </ul> 
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

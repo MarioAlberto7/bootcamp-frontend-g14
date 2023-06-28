@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --font-primary: 'raleway', sans-serif;
+    --font-secondary: 'opens sans', sans-serif;
+    --font-size: 16px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --primary-very-dark-blue: hsl(243, 87%, 12%);
+    --primary-desaturated-blue: hsl(238, 22%, 44%);
+
+    --accent-bright-blue: hsl(224, 93%, 58%);
+    --accent-moderate-cyan: hsl(170, 45%, 43%);
+
+    --neutral-light-grayish-blue: hsl(240, 75%, 98%);
+    --neutral-light-gray: hsl(0, 0%, 75%);
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    background-color: var(--neutral-light-grayish-blue);
+    color: var(--primary-very-dark-blue)
+
+    
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+.header {
+    font-family: var(--font-primary);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2rem;
+
+    
+}
+
+.header__nav {
+    list-style: none;
+
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.wrapper {
+    width: min(100% - 2.5rem, 1440px);
+}
+
+
+
+.hero {
+    margin: 0 auto;
+    margin-top: 4.5rem;
+
+    display: grid;
+    grid-template-columns: .5fr .5fr 1fr;
+    grid-template-rows: .2fr .2fr .2fr;
+
+    grid-template-areas: "ht ht hi"
+    "htx htx hi"
+    "hin hb hi";
+    
+    gap: .5rem;
+
+    text-align: left;
+
+    
+}
+
+.hero__title {
+    grid-area: ht;
+    width: min(100%-3rem, 720px);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 6rem 22rem .5rem 15rem;
+}
+
+.hero__text {
+    grid-area: htx;
+    width: min(100%-3rem, 720px);
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-regular);
+    margin: auto 25rem .5rem 15rem;
+    
+}
+
+.hero__input {
+    grid-area: hin;
+    margin: auto 15rem .5rem 15rem;
+    font-family: var(--font-secondary);
+    padding: 1rem 4rem 1rem 10px;
+    
+}
+
+.hero__button {
+    grid-area: hb;
+    font-family: var(--font-secondary);
+    margin: auto auto .5rem -10rem;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 5rem;
+    line-height: 1.5;
+    min-height: 20px;
+    color: var(--neutral-light-grayish-blue);
+    background: var(--accent-bright-blue);
+}
+
+.hero__image {
+    grid-area: hi;
+}
+
+.features {
+    display: grid;
+    background: var(--neutral-light-grayish-blue) url(../images/bg-curve-desktop.svg) no-repeat top;
+}
+
+.features__title {
+    margin: 100px;
+}

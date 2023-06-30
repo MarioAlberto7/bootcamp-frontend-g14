@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+@import 'card';
+
+body {
+    background-color: $primary-color;
+    text-align: center;
+}
+
+
+

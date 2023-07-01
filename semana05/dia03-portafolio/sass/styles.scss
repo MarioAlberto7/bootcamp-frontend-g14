@@ -1,0 +1,44 @@
+@import 'variable';
+@import 'header';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  background-color: $primary-dark-blue1;
+  color: $primary-dark-white;
+}
+
+
+.svgs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    order: 2;
+  }
+}
+
+.div__theme, .div__github, .div__linkedin {
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+    order: 4;
+  }
+}
+
+.div__linkedin {
+  padding-right: 32px;
+  
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
+}

@@ -5,7 +5,7 @@
     font-family: $font-primary;
     gap: 25px;
     text-decoration: none;
-    padding: 2rem;
+    padding-top: 29px;
     
     @media (max-width: 768px) {
       flex-direction: column;
@@ -23,8 +23,8 @@
     align-items: flex-start;
     
     @media (max-width: 768px) {
+      order: 2;
       margin-bottom: 1rem;
-      order: 1;
     }
   }
   
@@ -36,13 +36,18 @@
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: flex-start;
-      order: 3;
+      order: 1;
     }
   }
   
   .header__nav {
     padding: 10px;
     font-size: 18px;
+    
+    @media (max-width: 768px) {
+      padding: 0;
+      order: 3;
+    }
   }
   
   .header__link {
@@ -61,4 +66,29 @@
   .header__link, .header__link2 {
     text-transform: capitalize;
   }
+
+  .svgs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+      order: 4;
+    }
+  }
   
+  .div__theme, .div__github, .div__linkedin {
+    @media (max-width: 768px) {
+      margin-top: 1rem;
+      order: 5;
+    }
+  }
+  
+  .div__linkedin {
+    padding-right: 32px;
+    
+    @media (max-width: 768px) {
+      padding-right: 0;
+    }
+  }

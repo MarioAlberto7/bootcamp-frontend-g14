@@ -85,6 +85,7 @@ body {
     display: flex;
     flex-direction: column;
     
+    
     @media (max-width: 768px) {
       align-items: center;
     }
@@ -93,6 +94,7 @@ body {
   .feature {
     padding-left: 93px;
     padding-top: 298px;
+    grid-area: feat;
     
     @media (max-width: 768px) {
       padding-left: 0;
@@ -179,9 +181,9 @@ body {
     }
   }
 
-//   .features, .piramide {
-//     display: inline-block;
-//   }
+  .niveles {
+    grid-area: niv;
+  }
 
   .nivel {
     margin-bottom: 40px;
@@ -190,4 +192,11 @@ body {
   .nivel svg {
     width: 80px;
     height: 80px;
+  }
+
+  .grid_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr;
+    grid-template-areas: "feat niv";
   }

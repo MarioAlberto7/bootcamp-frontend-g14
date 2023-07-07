@@ -183,6 +183,7 @@ body {
 .feature {
   padding-left: 93px;
   padding-top: 298px;
+  grid-area: feat;
 }
 @media (max-width: 768px) {
   .feature {
@@ -274,6 +275,10 @@ body {
   }
 }
 
+.niveles {
+  grid-area: niv;
+}
+
 .nivel {
   margin-bottom: 40px;
 }
@@ -281,6 +286,13 @@ body {
 .nivel svg {
   width: 80px;
   height: 80px;
+}
+
+.grid_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  grid-template-areas: "feat niv";
 }
 
 /*# sourceMappingURL=styles.css.map */

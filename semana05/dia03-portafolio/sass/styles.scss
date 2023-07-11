@@ -191,3 +191,27 @@ body {
     width: 80px;
     height: 80px;
   }
+
+  .wrapper {
+    width: min(100% - 3rem, 1440px);
+    margin: 0 auto;
+  }
+
+  .piramide {
+    display: grid;
+    grid-template-columns: repeat(6, 5rem);
+    grid-template-rows: repeat(4, 5rem);
+    justify-content: end;
+
+    grid-template-areas: 
+    ". . s1 . . ."
+    ". . s2 s3 . ."
+    ". s4 s5 s6 s7 ."
+    "s8 s9 s10 s11 s12 s13";
+
+    gap: .5rem;
+    padding: 24px;
+    position: relative;
+
+
+  }

@@ -1,4 +1,4 @@
-let numeroActual = '0'
+let numeroActual = ''
 let operador = ''
 let operando = ''
 
@@ -15,7 +15,7 @@ buttons.forEach(function (button) {
         if ('+-*'.includes(buttonText)){
             operador = buttonText
             operando = Number(numeroActual)
-            numeroActual = '0'
+            numeroActual = ''
         } else if (buttonText=== '='){
             
             if (operador === '+'){
@@ -30,9 +30,9 @@ buttons.forEach(function (button) {
             operador = ''
             operando = ''
         } else {
-            numeroActual = numeroActual + Number
+            numeroActual = numeroActual + Number(buttonText)
         }
 
-        inputDisplay
+        inputDisplay.value = numeroActual
     })
 })

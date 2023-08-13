@@ -1,13 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import LayoutBase from './layouts/LayoutBase'
+import Character from './pages/Character'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <BrowserRouter>
+        <LayoutBase>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/character/:id' element={<Character />} />
+          </Routes>
+        </LayoutBase>
+      </BrowserRouter>
     </>
   )
 }
